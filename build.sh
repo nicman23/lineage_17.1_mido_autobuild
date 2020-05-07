@@ -16,6 +16,7 @@ do
   )
 done
 
+source build/envsetup.sh
 export CCACHE_EXEC=/usr/bin/ccache USE_CCACHE=1 CCACHE_COMPRESS=1
 a='lineage_mido-userdebug'; breakfast $a; croot; brunch $a;
 
