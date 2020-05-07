@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<!-- Device specific stuff -->
+	<remote name="PE" fetch="https://github.com/nicman23/" />
+	<project path="kernel/xiaomi/mido" name="kernel_xiaomi_mido" remote="PE" revision="ten" />
+	<project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="PE" revision="ten" />
+	<project path="vendor/xiaomi" name="vendor_xiaomi" remote="PE" revision="ten" />	
+</manifest>
