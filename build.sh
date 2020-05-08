@@ -4,7 +4,7 @@ mkdir lineage &> /dev/null || true
 cd lineage
 
 [ ! -e .repo ] && repo init -u https://github.com/LineageOS/android.git -b lineage-17.1
-cp -r ../local_manifest .repo/ || cp ../local_manifest/mido.xml .repo/local_manifest
+cp -r ../local_manifests .repo/ || cp ../local_manifests/mido.xml .repo/local_manifests/
 repo sync -j14 -c --force-sync --no-tags --no-clone-bundle --optimized-fetch --prune
 
 wdir="`pwd`"
