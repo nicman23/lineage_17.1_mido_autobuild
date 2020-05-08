@@ -11,8 +11,8 @@ wdir="`pwd`"
 for i in ../patches/*
 do
   (
-    cd "`echo $i | sed 's/_/\//'`"
-    patch -p1 < "$wdir/$i/*"
+    cd "`echo $i | sed -e 's/_/\//g' -e 's/..\/patches\///'`"
+    cat "$wdir/$i/"* | patch -p1
   )
 done
 
